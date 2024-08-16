@@ -1,0 +1,17 @@
+<div class="search-results">
+    <h1>Results:</h1>
+    <ul>
+        {{#each results}}
+            <li>
+                <img src="img/github-6980894_960_720.webp" alt="GitHub Logo">
+                <div>
+                    <h2>{{this.title}}</h2>
+                    <p>{{this.text}}</p>
+                    <p>Author: {{this.author}}</p>
+                    <a href="{{this.url}}" target="_blank">View on GitHub</a>
+                </div>
+            </li>
+        {{/each}}
+    </ul>
+    <a href="/" class="back">Back to search</a>
+</div>

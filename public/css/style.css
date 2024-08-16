@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding: 50px 20px;
+    background-color: #24292e;
+    color: #fff;
+    height: 90vh;
+}
+
+
+.search-box h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.search-box h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.search-box form {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-box input[type="text"] {
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-box button {
+    margin-top: 15px;
+    padding: 15px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #218838;
+}
+
+/* Search Results */
+.search-results {
+    padding: 50px 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.search-results h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #24292e;
+}
+
+.search-results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.search-results li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-results li:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-results li img {
+    width: 100px;
+    margin-right: 20px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.search-results h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #0366d6;
+}
+
+.search-results p {
+    margin: 5px 0;
+    color: #586069;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 3;
+}
+
+.search-results a {
+    color: #0366d6;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.search-results a:hover {
+    text-decoration: underline;
+}
+
+.search-results a.back {
+    display: block;
+    margin-top: 30px;
+    color: #0366d6;
+}
+
+.search-results a.back:hover {
+    text-decoration: underline;
+}
